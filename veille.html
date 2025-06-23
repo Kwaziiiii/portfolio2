@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille - Benkhadra Hajar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="noise">
+
+    <div class="blob-container">
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="" class="logo">Benkhadra Hajar</a>
+            
+            <nav class="nav-links-container">
+                <a href="profil.html">Profil</a>
+                <a href="projets.html">Projets</a>
+                <a href="stages.html">Stages</a>
+                <a href="veille.html" class="active">Veille</a>
+            </nav>
+
+            <a href="contact.html" class="contact-btn">
+                <span class="contact-dot"></span>
+                Contact
+            </a>
+
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+
+            <button class="menu-btn" id="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="profil.html">Profil</a>
+        <a href="projets.html">Projets</a>
+        <a href="stages.html">Stages</a>
+        <a href="veille.html" class="active">Veille</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" id="mobile-theme-toggle" aria-label="Toggle theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="container text-center">
+                <h1>Ma Veille Technologique</h1>
+                <p class="subtitle">Découvrez mes sources d'information et mes recherches.</p>
+            </div>
+        </section>
+        <section class="projects-section">
+            <div class="container">
+                <div class="projects-grid">
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="picture/veille.png" alt="quantic">
+                        </div>
+                        <h3 class="project-title">Informatique Quantique</h3>
+                        <p class="project-description">Le nouveau monde de l'informatique quantique et les changements qu'elle apporte.</p>
+                        <div class="project-buttons">
+                            <a href="docs/quantic computing.pdf" class="btn-project">Documentation</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="picture/oracle.png" alt="oracle">
+                        </div>
+                        <h3 class="project-title">Attack sur Oracle Servers</h3>
+                        <p class="project-description">Oracle a signalé une deuxième violation de données en un mois. Selon Bloomberg, un pirate a infiltré un ancien système, volé des identifiants clients et mis les données en vente.</p>
+                        <div class="project-buttons">
+                            <a href="https://www.lemondeinformatique.fr/actualites/lire-oracle-cumule-les-violations-de-donnees-96511.html" class="btn-project">Read More...</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="picture/light.png" alt="light">
+                        </div>
+                        <h3 class="project-title">New silicon photonic multiplexer chip</h3>
+                        <p class="project-description">Chinese researchers invent silicon photonic multiplexer chip that uses light instead of electricity for communication — CCP says China's early steps into light-based chips precede 'major breakthroughs' in three years.</p>
+                        <div class="project-buttons">
+                            <a href="https://www.tomshardware.com/tech-industry/semiconductors/chinese-researchers-invent-silicon-photonic-multiplexer-chip-that-uses-light-instead-of-electricity-for-communication-ccp-says-chinas-early-steps-into-light-based-chips-precede-major-breakthroughs-in-three-years" class="btn-project">Read More...</a>
+                        </div>
+                    </div>
+
+                    
+        </section>
+    </main>
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>

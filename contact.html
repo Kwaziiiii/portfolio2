@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Benkhadra Hajar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="noise">
+
+    <div class="blob-container">
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="" class="logo">Benkhadra Hajar</a>
+            
+            <nav class="nav-links-container">
+                <a href="profil.html">Profil</a>
+                <a href="projets.html">Projets</a>
+                <a href="stages.html">Stages</a>
+                <a href="veille.html">Veille</a>
+            </nav>
+
+            <a href="contact.html" class="contact-btn active">
+                <span class="contact-dot"></span>
+                Contact
+            </a>
+
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+
+            <button class="menu-btn" id="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="profil.html">Profil</a>
+        <a href="projets.html">Projets</a>
+        <a href="stages.html">Stages</a>
+        <a href="veille.html">Veille</a>
+        <a href="contact.html" class="active">Contact</a>
+        <button class="theme-toggle" id="mobile-theme-toggle" aria-label="Toggle theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+
+    <main>
+        <section class="contact-section">
+            <div class="container text-center">
+                <h1 class="contact-title">Leave a <span class="highlight">message if you like </span></h1>
+                <p class="subtitle">Don't hesitate sending me a message and see my socials for more.</p>
+
+                <div class="social-links-contact">
+                    <a href="https://www.linkedin.com/in/hajar-benkhadra-468628332/" target="_blank" class="social-btn">LinkedIn</a>
+                    <a href="https://github.com/Kwaziiiii" target="_blank" class="social-btn">GitHub</a>
+                </div>
+
+               
+                <form action="https://formspree.io/f/xldnwkar" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Votre nom" required>
+                        <input type="email" name="email" placeholder="Your email " required>
+                    </div>
+                    <textarea name="message" placeholder="Your message" rows="6" required></textarea>
+                    <button type="submit" class="btn-submit">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

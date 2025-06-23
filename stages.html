@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stages - Benkhadra Hajar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="noise">
+
+    <div class="blob-container">
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="" class="logo">Benkhadra Hajar</a>
+            
+            <nav class="nav-links-container">
+                <a href="profil.html">Profil</a>
+                <a href="projets.html">Projets</a>
+                <a href="stages.html" class="active">Stages</a>
+                <a href="veille.html">Veille</a>
+            </nav>
+
+            <a href="contact.html" class="contact-btn">
+                <span class="contact-dot"></span>
+                Contact
+            </a>
+
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+
+            <button class="menu-btn" id="menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="profil.html">Profil</a>
+        <a href="projets.html">Projets</a>
+        <a href="stages.html" class="active">Stages</a>
+        <a href="veille.html">Veille</a>
+        <a href="contact.html">Contact</a>
+        <button class="theme-toggle" id="mobile-theme-toggle" aria-label="Toggle theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="container text-center">
+                <h1>Mes Stages</h1>
+                <p class="subtitle">Découvrez mes expériences professionnelles.</p>
+            </div>
+        </section>
+
+        <section class="internship-section">
+            <div class="container">
+                <div class="internship-title-container text-center">
+                    <span class="internship-badge">• STAGE ACTUEL</span>
+                    <h2>Mon stage chez <span class="highlight">Fiesta Informatique</span></h2>
+                    <p class="subtitle">Une expérience enrichissante dans le développement web.</p>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-header">
+                        <div class="company-logo">
+                            <img src="picture/fiesta.png" alt="Fiesta Informatique Logo" class="company-logo-img">
+                        </div>
+                        <div class="company-info">
+                            <h3>Fiesta Informatique</h3>
+                            <p class="company-description">Fiesta Informatique, une start-up dynamique, propose des solutions informatiques complètes : développement web, gestion de projets, maintenance, et support technique.</p>
+                            <div class="company-details">
+                                <span class="detail-item">
+                                    <strong>Durée:</strong>39jours
+                                </span>
+                                <span class="detail-item">
+                                    <strong>Poste:</strong> Développeuse Junior Javascript
+                                </span>
+                                <span class="detail-item">
+                                    <strong>Technologies:</strong>Javascript,React,Node.js,API,Oracle sql developer,Oracle Database,Github Projects,Mockoon,Postman,Debian
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="container">
+                <div class="documentation-title-container text-center">
+                    <h2>Documentation & Réalisations</h2>
+                    <p class="subtitle">Voici les documents et réalisations de mon stage.</p>
+                </div>
+                <div class="projects-grid">
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="picture/Archlinux-logo-standard-version.png" alt="quantic">
+                        </div>
+                        <h3 class="project-title">DualBoot Arch/Wind</h3>
+                        <p class="project-description">Lors du stage j'ai réaliser une Documentation sur l'installation en dualboot le systéme d'exploitation ArchLinux avec Windows 11 basant sur ma propre experience d'installation d'avant.</p>
+                        <div class="project-buttons">
+                            <a href="docs/DUAL BOOT ARCHLINUX ET WINDOWS 11.docx" class="btn-project">Documentation</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="picture/kali.jpeg" alt="oracle">
+                        </div>
+                        <h3 class="project-title">DualBoot Kali/Wind</h3>
+                        <p class="project-description">Lors du stage j'ai réaliser une Documentation sur l'installation en dualboot le systéme d'exploitation Kalilinux avec Windows 11 basant sur ma propre experience d'installation d'avant.</p>
+                        <div class="project-buttons">
+                            <a href="docs/Documentation Kali LInux Dualboot.docx" class="btn-project">Documentation</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="picture/debian.png" alt="light">
+                        </div>
+                        <h3 class="project-title">DualBoot Debian/Wind</h3>
+                        <p class="project-description">Lors du stage j'ai réaliser une Documentation sur l'installation en dualboot le systéme d'exploitation Debian12 avec Windows 11 basant sur l'installation sur une machine de l'entreprise</p>
+                        <div class="project-buttons">
+                            <a href="docs/Documentation Kali LInux Dualboot.docx" class="btn-project">Documentation</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="picture/rufus.jpeg" alt="light">
+                        </div>
+                        <h3 class="project-title">Clé Bootable</h3>
+                        <p class="project-description">Lors du stage j'ai réaliser une Documentation sur la configuration d'une clef bootable utilisant rufus.</p>
+                        <div class="project-buttons">
+                            <a href="docs/CLE DEMARRABLE.pdf" class="btn-project">Documentation FR</a>
+                            <a href="docs/Bootable USB.pdf" class="btn-project">Documentation Eng</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="picture/api.png" alt="light">
+                        </div>
+                        <h3 class="project-title">Compte Rendu</h3>
+                        <p class="project-description">Lors du stage j'ai réaliser une présentation avec un compte rendu sur l'environnement technique pour coder et tester une API RESTful..</p>
+                        <div class="project-buttons">
+                            <a href="docs/Compte Rendu-Environnement Technique.docx" class="btn-project">Documentation FR</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="picture/api.png" alt="light">
+                        </div>
+                        <h3 class="project-title">Présentation</h3>
+                        <p class="project-description">Lors du stage j'ai réaliser une présentation avec un compte rendu sur l'environnement technique pour coder et tester une API RESTful.</p>
+                        <div class="project-buttons">
+                            <a href="docs/Environnement Technique.pdf" class="btn-project">Présentation</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="picture/linux.jpeg" alt="light">
+                        </div>
+                        <h3 class="project-title">Linux comme environnement technique</h3>
+                        <p class="project-description">Lors du stage j'ai réaliser une présentation sur Linux comme un environnement technique pour coder et tester des API et ses equivalence par rapport à windows,aussi que ses divers distribution.</p>
+                        <div class="project-buttons">
+                            <a href="docs/linux environement.pdf" class="btn-project">Présentation</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="picture/server.jpeg" alt="light">
+                        </div>
+                        <h3 class="project-title">Déploiement d'un site en ligne</h3>
+                        <p class="project-description">Lors du stage j'ai réaliser un guide avec une présentation sur tout ce qui est nécessaire pour déployer un site en ligne, y compris le matériel,les standars,les options...</p>
+                        <div class="project-buttons">
+                            <a href="docs/linux environement.pdf" class="btn-project">Présentation</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="picture/server.jpeg" alt="light">
+                        </div>
+                        <h3 class="project-title">Déploiement d'un site en ligne</h3>
+                        <p class="project-description">Lors du stage j'ai réaliser un guide avec une présentation sur tout ce qui est nécessaire pour déployer un site en ligne, y compris le matériel,les standars,les options...</p>
+                        <div class="project-buttons">
+                            <a href="docs/linux environement.pdf" class="btn-project">Présentation</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="tickets-section">
+            <div class="container">
+                <div class="tickets-title-container text-center">
+                    <h2>GitHub Tickets & Développement</h2>
+                    <p class="subtitle">Les tickets sur lesquels j'ai travaillé pendant mon stage.</p>
+                </div>
+                
+                
+                <div class="tickets-grid">
+                    <div class="ticket-card">
+                        <div class="ticket-header">
+                            <div class="ticket-status ticket-closed">Closed</div>
+                            <div class="ticket-number">#001</div>
+                        </div>
+                        <h3 class="ticket-title">Bug d'Oracle DB</h3>
+                        <p class="ticket-description">des packages qui n'ont pas été bien installé lors d'une erreur humaine lors de l'installation.</p>
+                        <div class="ticket-meta">
+                            <span class="ticket-label">BackEnd</span>
+                            <span class="ticket-label">DataBase</span>
+                        </div>
+                        <div class="ticket-footer">
+                            <span class="ticket-assignee">Assigned to: Hajar</span>
+                            <span class="ticket-date">Closed: 12-16 Mai 2025</span>
+                        </div>
+                    </div>
+                    <div class="ticket-card">
+                        <div class="ticket-header">
+                            <div class="ticket-status ticket-open">Open</div>
+                            <div class="ticket-number">#002</div>
+                        </div>
+                        <h3 class="ticket-title">Création d'une MockAPI</h3>
+                        <p class="ticket-description">Développement d'une MockAPI avec Mockoon et tester avec Postman</p>
+                        <div class="ticket-meta">
+                            <span class="ticket-label">BackEnd</span>
+                            <span class="ticket-label">API</span>
+                        </div>
+                        <div class="ticket-footer">
+                            <span class="ticket-assignee">Assigned to: Hajar</span>
+                            <span class="ticket-date">Created: 19-23 Mai 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-card">
+                        <div class="ticket-header">
+                            <div class="ticket-status ticket-in-progress">In Progress</div>
+                            <div class="ticket-number">#003</div>
+                        </div>
+                        <h3 class="ticket-title">Récupération d'une API</h3>
+                        <p class="ticket-description">On récupere une API externe come API  AliBaba/Ali Express.</p>
+                        <div class="ticket-meta">
+                            <span class="ticket-label">BackEnd</span>
+                            <span class="ticket-label">API</span>
+                        </div>
+                        <div class="ticket-footer">
+                            <span class="ticket-assignee">Assigned to: Hajar</span>
+                            <span class="ticket-date">Created: 19-23 Mai 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-card">
+                        <div class="ticket-header">
+                            <div class="ticket-status ticket-closed">Closed</div>
+                            <div class="ticket-number">#004</div>
+                        </div>
+                        <h3 class="ticket-title">Bug du solde et d'achat des produits</h3>
+                        <p class="ticket-description">Aprés on effectue un achat on constate un bug dans le profil du client, on n'arrive pas à pull le solde active.</p>
+                        <div class="ticket-meta">
+                            <span class="ticket-label">BackEnd</span>
+                            <span class="ticket-label">DataBase</span>
+                        </div>
+                        <div class="ticket-footer">
+                            <span class="ticket-assignee">Assigned to: Hajar</span>
+                            <span class="ticket-date">Closed: 26-30 Mai 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-card">
+                        <div class="ticket-header">
+                            <div class="ticket-status ticket-in-progress">In Progress</div>
+                            <div class="ticket-number">#005</div>
+                        </div>
+                        <h3 class="ticket-title">Etude sur les catégories et/ou produits</h3>
+                        <p class="ticket-description">Une étude sur les catégories et les produits de l'api et son intégration dans le site.</p>
+                        <div class="ticket-meta">
+                            <span class="ticket-label">BackEnd</span>
+                            <span class="ticket-label">DataBase</span>
+                        </div>
+                        <div class="ticket-footer">
+                            <span class="ticket-assignee">Assigned to: Hajar</span>
+                            <span class="ticket-date">Closed: 9-13 Juin 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-card">
+                        <div class="ticket-header">
+                            <div class="ticket-status ticket-open">Open</div>
+                            <div class="ticket-number">#006</div>
+                        </div>
+                        <h3 class="ticket-title">Ajout des fonctionnalitées de livraision pour client</h3>
+                        <p class="ticket-description">Ajout des options de delivery adress et genre du client et code postale pour livrasion.</p>
+                        <div class="ticket-meta">
+                            <span class="ticket-label">BackEnd</span>
+                            <span class="ticket-label">Data Base</span>
+                        </div>
+                        <div class="ticket-footer">
+                            <span class="ticket-assignee">Assigned to: Hajar</span>
+                            <span class="ticket-date">Created: 9-13 Juin 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="ticket-card">
+                        <div class="ticket-header">
+                            <div class="ticket-status ticket-in-progress">In Progress</div>
+                            <div class="ticket-number">#007</div>
+                        </div>
+                        <h3 class="ticket-title">Fix de la taille des produits</h3>
+                        <p class="ticket-description">Un produit peut avoir plusieur taille disponible, et les configurer d'après un compte admin.</p>
+                        <div class="ticket-meta">
+                            <span class="ticket-label">BackEnd</span>
+                            <span class="ticket-label">Data Base</span>
+                        </div>
+                        <div class="ticket-footer">
+                            <span class="ticket-assignee">Assigned to: Hajar</span>
+                            <span class="ticket-date">Created:9-13 Juin 2025</span>
+                        </div>
+                    </div>
+                    <div class="ticket-card">
+                        <div class="ticket-header">
+                            <div class="ticket-status ticket-closed">Closed</div>
+                            <div class="ticket-number">#008</div>
+                        </div>
+                        <h3 class="ticket-title">Bug d'email/notification de validation d'achat</h3>
+                        <p class="ticket-description">Aprés on effectue un achat on reçoie pas un mail de validation d'achat ou une notification dans le compe client.</p>
+                        <div class="ticket-meta">
+                            <span class="ticket-label">BackEnd</span>
+                            <span class="ticket-label">Data Base</span>
+                        </div>
+                        <div class="ticket-footer">
+                            <span class="ticket-assignee">Assigned to: Hajar</span>
+                            <span class="ticket-date">Created: 16-20 Juin 2025</span>
+                        </div>
+                    </div>
+                    <div class="ticket-card">
+                        <div class="ticket-header">
+                            <div class="ticket-status ticket-open">Open</div>
+                            <div class="ticket-number">#009</div>
+                        </div>
+                        <h3 class="ticket-title">Maquette de page d'acceuil</h3>
+                        <p class="ticket-description">Réalisation d'une maquette pour page d'acceuil d'un site d'e-commerce.</p>
+                        <div class="ticket-meta">
+                            <span class="ticket-label">FrontEnd</span>
+                            <span class="ticket-label">UI/UX</span>
+                        </div>
+                        <div class="ticket-footer">
+                            <span class="ticket-assignee">Assigned to: Hajar</span>
+                            <span class="ticket-date">Created: 16-20 Juin 2025</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
