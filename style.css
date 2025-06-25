@@ -192,7 +192,13 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 3vw;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 4vw;
+    }
 }
 
 .text-center { text-align: center; }
@@ -1571,4 +1577,458 @@ body {
     .tickets-title-container h2 {
         font-size: 2rem;
     }
+}
+
+.about-me-section {
+    background: var(--container-bg);
+    border: 1px solid var(--container-border);
+    border-radius: 18px;
+    margin: 2.5rem auto 2.5rem auto;
+    padding: 2.5rem 1.5rem;
+    max-width: 700px;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.10);
+}
+
+.about-me-title {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.about-me-text {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.about-me-cv-btn {
+    display: inline-block;
+    margin-top: 2.5rem;
+    padding: 0.8rem 2rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 50px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background: none;
+}
+.about-me-cv-btn:hover {
+    background-color: var(--accent-color);
+    color: #000;
+    box-shadow: 0 5px 15px rgba(246, 152, 227, 0.3);
+    text-decoration: none;
+}
+
+.github-btn {
+    display: inline-block;
+    background: #181717;
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.6em 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 0.7rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    transition: filter 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px 0 rgba(24,23,23,0.10);
+}
+.github-btn:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 4px 16px 0 rgba(24,23,23,0.18);
+    text-decoration: none;
+}
+.github-btn svg {
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.profile-github-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.profile-github-btn {
+    background: #181717;
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.6em 1.6em;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.05rem;
+    box-shadow: 0 2px 8px 0 rgba(24,23,23,0.10);
+    transition: filter 0.2s, box-shadow 0.2s;
+    display: inline-block;
+}
+.profile-github-btn:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 4px 16px 0 rgba(24,23,23,0.18);
+    text-decoration: none;
+}
+
+.xp-academic-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin: 3rem 0 3rem 0;
+}
+
+@media (max-width: 900px) {
+  .xp-academic-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.experience-card, .academic-timeline.specialite-card {
+  background: var(--container-bg);
+  border: 1px solid var(--container-border);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.10);
+  padding: 2.2rem 1.5rem 2.2rem 1.5rem;
+  position: relative;
+}
+
+.experience-card .card-header, .academic-timeline .card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+.card-tag {
+  background: var(--accent-color);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.3em 1.1em;
+  margin-right: 0.8em;
+  letter-spacing: 0.5px;
+}
+
+.internship-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+.internship-company { font-weight: 600; }
+.internship-date { font-size: 0.98rem; opacity: 0.8; }
+.internship-location { font-size: 0.98rem; opacity: 0.8; margin-bottom: 0.2rem; }
+.internship-desc { margin-bottom: 1.1rem; color: var(--text-secondary); }
+.missions-bloc h4 { color: var(--accent-color); margin-bottom: 0.4rem; }
+.missions-bloc ul { margin: 0 0 1.1rem 0; padding-left: 1.2em; }
+.missions-bloc li { margin-bottom: 0.3em; }
+.internship-tech { margin-top: 0.7rem; font-size: 0.98rem; }
+.internship-tech span { background: #23272e; color: var(--accent-color); border-radius: 6px; padding: 0.2em 0.7em; margin-right: 0.4em; font-weight: 500; font-size: 0.97em; }
+
+/* Timeline */
+.academic-timeline { padding: 2.2rem 1.5rem 2.2rem 1.5rem; }
+.timeline { position: relative; margin-left: 1.5rem; }
+.timeline-item { display: flex; align-items: flex-start; position: relative; }
+.timeline-dot {
+  width: 18px;
+  height: 18px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  position: absolute;
+  left: -32px;
+  top: 0.5em;
+  border: 3px solid #181717;
+  box-shadow: 0 0 0 4px rgba(246,152,227,0.10);
+}
+.timeline-line {
+  width: 3px;
+  background: var(--accent-color);
+  position: relative;
+  left: -24px;
+  min-height: 40px;
+  margin: 0 0 0 0;
+  height: 40px;
+  border-radius: 2px;
+  opacity: 0.5;
+}
+.timeline-content { margin-bottom: 1.5rem; margin-left: 1.5rem; width: 100%; }
+.timeline-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--container-border);
+  border-radius: 16px;
+  padding: 1.1rem 1.3rem;
+  box-shadow: 0 2px 12px 0 rgba(246,152,227,0.08);
+  margin-bottom: 0.2rem;
+}
+.timeline-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+.timeline-card-title { font-weight: 600; color: var(--accent-color); font-size: 1.08rem; }
+.timeline-card-date { font-size: 0.98rem; color: #fff; background: var(--accent-color); border-radius: 8px; padding: 0.1em 0.7em; margin-left: 0.7em; }
+.timeline-card-school { font-size: 0.98rem; color: var(--text-secondary); margin-bottom: 0.3rem; }
+.timeline-card-desc ul { margin: 0.3em 0 0 1.2em; padding: 0; }
+.timeline-card-desc li { font-size: 0.97em; margin-bottom: 0.2em; }
+
+@media (max-width: 900px) {
+  .timeline { margin-left: 0.7rem; }
+  .timeline-dot { left: -20px; }
+  .timeline-line { left: -12px; }
+}
+
+.competence-options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin: 2.5rem auto 2.5rem auto;
+  max-width: 1100px;
+  justify-content: center;
+}
+.competence-options-grid.options-section .specialite-card {
+  background: linear-gradient(145deg, rgba(255, 193, 7, 0.15), rgba(255, 87, 34, 0.15));
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(255, 193, 7, 0.10);
+}
+@media (max-width: 1100px) {
+  .competence-options-grid {
+    max-width: 98vw;
+    gap: 1.2rem;
+  }
+  .competence-options-grid.options-section .specialite-card {
+    max-width: 98vw;
+  }
+}
+@media (max-width: 900px) {
+  .competence-options-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+}
+
+.experience-card:hover, .academic-main-card:hover {
+  box-shadow: 0 0 0 4px #f6d365, 0 8px 32px 0 rgba(246, 211, 101, 0.13);
+  border-color: #f6d365;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+/* --- Compétences Communes Tag Cloud --- */
+.competence-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0 2.5rem 0;
+  justify-content: center;
+}
+.competence-tags span {
+  display: inline-block;
+  padding: 0.5em 1.3em;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  border-radius: 999px;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  letter-spacing: 0.01em;
+  cursor: default;
+  opacity: 0;
+  animation: fadeInUp 0.7s forwards;
+}
+.competence-tags span:nth-child(1) { animation-delay: 0.05s; }
+.competence-tags span:nth-child(2) { animation-delay: 0.10s; }
+.competence-tags span:nth-child(3) { animation-delay: 0.15s; }
+.competence-tags span:nth-child(4) { animation-delay: 0.20s; }
+.competence-tags span:nth-child(5) { animation-delay: 0.25s; }
+.competence-tags span:nth-child(6) { animation-delay: 0.30s; }
+.competence-tags span:nth-child(7) { animation-delay: 0.35s; }
+.competence-tags span:nth-child(8) { animation-delay: 0.40s; }
+.competence-tags span:nth-child(9) { animation-delay: 0.45s; }
+.competence-tags span:nth-child(10) { animation-delay: 0.50s; }
+.competence-tags span:nth-child(11) { animation-delay: 0.55s; }
+.competence-tags span:nth-child(12) { animation-delay: 0.60s; }
+.competence-tags span:nth-child(13) { animation-delay: 0.65s; }
+.competence-tags span:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  background: rgba(246, 152, 227, 0.07);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tickets-grid .ticket-card {
+  opacity: 0;
+  animation: fadeInUp 0.7s forwards;
+}
+.tickets-grid .ticket-card:nth-child(1) { animation-delay: 0.05s; }
+.tickets-grid .ticket-card:nth-child(2) { animation-delay: 0.10s; }
+.tickets-grid .ticket-card:nth-child(3) { animation-delay: 0.15s; }
+.tickets-grid .ticket-card:nth-child(4) { animation-delay: 0.20s; }
+.tickets-grid .ticket-card:nth-child(5) { animation-delay: 0.25s; }
+.tickets-grid .ticket-card:nth-child(6) { animation-delay: 0.30s; }
+.tickets-grid .ticket-card:nth-child(7) { animation-delay: 0.35s; }
+.tickets-grid .ticket-card:nth-child(8) { animation-delay: 0.40s; }
+.tickets-grid .ticket-card:nth-child(9) { animation-delay: 0.45s; }
+.tickets-grid .ticket-card:nth-child(10) { animation-delay: 0.50s; }
+
+[data-theme="light"] .card-tag {
+  color: #1a1a1a !important;
+  background: #e91e63 !important;
+  box-shadow: 0 2px 8px 0 rgba(233, 30, 99, 0.10);
+}
+
+main {
+  transform: scale(0.85);
+  transform-origin: top center;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1);
+  margin-top: 2.5rem;
+}
+@media (max-width: 900px) {
+  main {
+    transform: none;
+    margin-top: 0;
+  }
+}
+
+.about-me-modern {
+  background: linear-gradient(135deg, rgba(30, 0, 40, 0.7), rgba(0, 20, 40, 0.7) 80%);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18);
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  margin: 2.5rem auto 2.5rem auto;
+  max-width: 700px;
+  border: 1.5px solid rgba(255,255,255,0.08);
+  opacity: 0;
+}
+.about-me-columns-modern {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+.about-me-photo-wrapper {
+  flex: 0 0 180px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.about-me-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--accent-color);
+  box-shadow: 0 4px 24px 0 rgba(246,152,227,0.10);
+  background: #181818;
+  transition: transform 0.3s;
+}
+.about-me-photo:hover {
+  transform: scale(1.04) rotate(-2deg);
+}
+.about-me-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.about-me-title {
+  color: var(--accent-color);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+.about-me-section-block {
+  margin-bottom: 1.2rem;
+}
+.about-me-subtitle {
+  color: var(--accent-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 900px) {
+  .about-me-columns-modern {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .about-me-photo-wrapper {
+    margin-bottom: 1.2rem;
+  }
+  .about-me-modern {
+    padding: 1.2rem 0.7rem;
+  }
+}
+
+.about-me-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+}
+.about-me-contact-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent-color);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.08rem;
+  transition: color 0.2s;
+}
+.about-me-contact-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.academic-timeline.specialite-card:hover {
+  box-shadow: 0 0 0 4px #f6d365, 0 8px 32px 0 rgba(246, 211, 101, 0.13);
+  border-color: #f6d365;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+@keyframes fadeInUpCard {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.timeline-card-btn-wrapper {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.timeline-card-btn {
+  display: inline-block;
+  padding: 0.55em 1.4em;
+  background: var(--accent-color);
+  color: #181818;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px 0 rgba(246, 152, 227, 0.10);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.timeline-card-btn:hover {
+  background: #d83c87;
+  color: #fff;
+  box-shadow: 0 4px 16px 0 rgba(246, 152, 227, 0.18);
 }
