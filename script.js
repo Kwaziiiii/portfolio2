@@ -66,6 +66,32 @@ document.addEventListener('DOMContentLoaded', function() {
             el.classList.add('scroll-animate', 'from-bottom');
         });
 
+        // Ticket cards (staggered animation)
+        const ticketCards = document.querySelectorAll('.ticket-card');
+        if (ticketCards.length > 0) {
+            const ticketObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const cards = Array.from(ticketCards);
+                        const idx = cards.indexOf(entry.target);
+                        if (idx !== -1) {
+                            setTimeout(() => {
+                                entry.target.classList.add('animate');
+                            }, idx * 120);
+                        } else {
+                            entry.target.classList.add('animate');
+                        }
+                    } else {
+                        entry.target.classList.remove('animate');
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
+
+            ticketCards.forEach(card => {
+                ticketObserver.observe(card);
+            });
+        }
+
         // Intersection Observer for triggering animations
         const observerOptions = {
             threshold: 0.1,
@@ -76,6 +102,8 @@ document.addEventListener('DOMContentLoaded', function() {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('animate');
+                } else {
+                    entry.target.classList.remove('animate');
                 }
             });
         }, observerOptions);
@@ -91,8 +119,18 @@ document.addEventListener('DOMContentLoaded', function() {
             const projectObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        // Add animation class to trigger the staggered animation
-                        entry.target.classList.add('animate');
+                        // Add animation class with staggered delay
+                        const cards = Array.from(projectCards);
+                        const idx = cards.indexOf(entry.target);
+                        if (idx !== -1) {
+                            setTimeout(() => {
+                                entry.target.classList.add('animate');
+                            }, idx * 120);
+                        } else {
+                            entry.target.classList.add('animate');
+                        }
+                    } else {
+                        entry.target.classList.remove('animate');
                     }
                 });
             }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
