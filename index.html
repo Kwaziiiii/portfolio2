@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Meta tags for proper document encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benkhadra Hajar - Portfolio</title>
+    
+    <!-- External CSS and font imports -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,15 +14,19 @@
 </head>
 <body class="noise">
 
+    <!-- Animated background blobs for visual appeal -->
     <div class="blob-container">
         <div class="blob"></div>
         <div class="blob"></div>
     </div>
 
+    <!-- Main navigation header -->
     <header class="navbar">
         <div class="container">
+            <!-- Logo/brand name -->
             <a href="" class="logo">Benkhadra Hajar</a>
             
+            <!-- Desktop navigation menu -->
             <nav class="nav-links-container">
                 <a href="index.html" class="active">Profil</a>
                 <a href="projets.html">Projets</a>
@@ -27,12 +34,15 @@
                 <a href="veille.html">Veille</a>
             </nav>
 
+            <!-- Contact button with animated dot -->
             <a href="contact.html" class="contact-btn">
                 <span class="contact-dot"></span>
                 Contact
             </a>
 
+            <!-- Theme toggle button (dark/light mode) -->
             <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <!-- Sun icon for light mode -->
                 <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="5"></circle>
                     <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -44,22 +54,27 @@
                     <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                     <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                 </svg>
+                <!-- Moon icon for dark mode -->
                 <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                 </svg>
             </button>
 
+            <!-- Mobile menu toggle button -->
             <button class="menu-btn" id="menu-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </button>
         </div>
     </header>
+    
+    <!-- Mobile navigation menu (hidden by default) -->
     <div class="mobile-nav" id="mobile-nav">
         <a href="index.html" class="active">Profil</a>
         <a href="projets.html">Projets</a>
         <a href="stages.html">Stages</a>
         <a href="veille.html">Veille</a>
         <a href="contact.html">Contact</a>
+        <!-- Mobile theme toggle button -->
         <button class="theme-toggle" id="mobile-theme-toggle" aria-label="Toggle theme">
             <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="5"></circle>
@@ -78,15 +93,17 @@
         </button>
     </div>
 
+    <!-- Main content area -->
     <main>
+        <!-- Hero section with welcome message -->
         <section class="hero">
             <div class="container text-center">
-                <h1>Développeuse Web </h1>
+                <h1>Benkhadra Hajar  </h1>
                 <p class="subtitle">Etudiante en premiére année BTS SIO option SLAM.</p>
             </div>
         </section>
 
-        <!-- Intro Section with Quote -->
+        <!-- Introduction section with inspirational quote -->
         <section class="intro-section">
             <div class="container text-center">
                     <p>Des systèmes qui transforment la théorie en réalité,</p>
@@ -97,21 +114,21 @@
                     <p><em>"L'informatique n'est pas plus liée aux ordinateurs que l'astronomie ne l'est aux télescopes." (Dijkstra)</em></p>
                 </div>
         </section>
-<!-- tablea de synth/ zoom out -->
-        
 
-        <!-- About Me Section -->
+        <!-- About Me section with personal information -->
         <section class="about-me-section">
             <div class="container about-me-card about-me-modern scroll-animate from-bottom">
                 <div class="about-me-columns-modern">
-                    <!-- Left: Photo -->
+                    <!-- Left column: Profile photo -->
                     <div class="about-me-photo-wrapper">
                         <img src="picture/me.jpg" alt="Photo de profil" class="about-me-photo" />
                     </div>
-                    <!-- Right: Content -->
+                    <!-- Right column: Personal information -->
                     <div class="about-me-content">
                         <h2 class="about-me-title">Qui suis-je ?</h2>
                         <p class="about-me-text">Je m'appelle Hajar Benkhadra, passionnée par l'informatique, la cybersécurité et le développement web. Curieuse, autonome et toujours prête à relever de nouveaux défis, j'aime apprendre et partager mes connaissances.</p>
+                        
+                        <!-- Strengths section -->
                         <div class="about-me-section-block">
                             <h3 class="about-me-subtitle">Points forts</h3>
                             <ul class="about-me-list">
@@ -122,6 +139,8 @@
                                 <li>Gestion du stress</li>
                             </ul>
                         </div>
+                        
+                        <!-- Interests section -->
                         <div class="about-me-section-block">
                             <h3 class="about-me-subtitle">Centres d'intérêt</h3>
                             <ul class="about-me-list">
@@ -130,9 +149,13 @@
                                 <li>Photographie</li>
                             </ul>
                         </div>
+                        
+                        <!-- CV download button -->
                         <div class="about-me-cv-btn-wrapper">
                             <a href="Résumé hajar.pdf" class="about-me-cv-btn" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
                         </div>
+                        
+                        <!-- Contact information -->
                         <div class="about-me-contact">
                           <a href="mailto:benkhadrahajar7@gmail.com" class="about-me-contact-link" title="Email">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:0.5em;"><rect x="2" y="4" width="20" height="16" rx="4"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -148,18 +171,17 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
-         
-<!-- form-stage  -->
-        <!-- Formation Section (BTS) -->
+        <!-- Academic and Professional Experience Section -->
         <section class="formation-section">
             <div class="container">
                 <div class="formation-title-container text-center">
                      <span class="parcours-badge">• PARCOURS ACADÉMIQUE ET EXPERIENCE</span>
+                     
+                     <!-- Education and Experience Timeline -->
                      <section class="education-history-section">
                         <div class="container">
                             <div class="xp-academic-grid">
-                              <!-- Expériences Professionnelles -->
+                              <!-- Professional Experience Card -->
                               <div class="specialite-card experience-card">
                                 <div class="card-header">
                                   <span class="card-tag">Expériences Professionnelles</span>
@@ -174,6 +196,7 @@
                                   <p class="internship-desc">
                                     Stage de 1re année de BTS SIO (option SLAM) axé sur le développement backend et la sécurité des systèmes.
                                   </p>
+                                  <!-- Main missions list -->
                                   <div class="missions-bloc">
                                     <h4>Missions principales</h4>
                                     <ul>
@@ -186,6 +209,7 @@
                                       <li>Réalisation d'une veille technologique continue</li>
                                     </ul>
                                   </div>
+                                  <!-- Technologies used -->
                                   <div class="internship-tech">
                                     <strong>Technologies :</strong>
                                     <span>PHP</span> <span>MySQL</span> <span>API REST</span> <span>Linux</span>
@@ -193,13 +217,13 @@
                                 </div>
                               </div>
 
-                              <!-- Parcours Académique Timeline -->
+                              <!-- Academic Timeline -->
                               <div class="academic-timeline specialite-card">
                                 <div class="card-header">
                                   <span class="card-tag">Parcours Académique</span>
                                 </div>
                                 <div class="timeline">
-                                  <!-- BTS SIO -->
+                                  <!-- BTS SIO Timeline Item -->
                                   <div class="timeline-item">
                                     <div class="timeline-dot"></div>
                                     <div class="timeline-content">
@@ -219,7 +243,8 @@
                                     </div>
                                   </div>
                                   <div class="timeline-line"></div>
-                                  <!-- Bac Eco -->
+                                  
+                                  <!-- Bac Economics Timeline Item -->
                                   <div class="timeline-item">
                                     <div class="timeline-dot"></div>
                                     <div class="timeline-content">
@@ -236,7 +261,8 @@
                                     </div>
                                   </div>
                                   <div class="timeline-line"></div>
-                                  <!-- Bac Physique Chimie -->
+                                  
+                                  <!-- Bac Physics Timeline Item -->
                                   <div class="timeline-item">
                                     <div class="timeline-dot"></div>
                                     <div class="timeline-content">
@@ -258,6 +284,7 @@
                         </div>
                     </section>
 
+                    <!-- BTS Formation Details -->
                     <div class="formation-bloc">
                         <h2 class="education-history-title">
                             <svg class="education-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" /> <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" /> </svg>
@@ -265,6 +292,7 @@
                         </h2>
                         <section class="education-history-section">
                             <div class="container specialites-grid">
+                                <!-- Organization details -->
                                 <div class="specialite-card">
                                     <h3>Organisation</h3>
                                     <ul>
@@ -274,6 +302,7 @@
                                         <li>Alternance possible</li>
                                     </ul>
                                 </div>
+                                <!-- Program details -->
                                 <div class="specialite-card">
                                     <h3>Programme</h3>
                                     <ul>
@@ -283,6 +312,7 @@
                                         <li>Mathématiques pour l'informatique</li>
                                     </ul>
                                 </div>
+                                <!-- Validation details -->
                                 <div class="specialite-card">
                                     <h3>Validation</h3>
                                     <ul>
@@ -296,9 +326,11 @@
                         </section>
                 </div>
                
+                    <!-- Common Skills Section -->
                     <div class="competences-bloc">
                         <h2 class="education-history-title">Compétences communes</h2>
                         <div class="specialites-grid">
+                            <!-- Support and assistance skills -->
                             <div class="specialite-card">
                                 <h3>Support et assistance</h3>
                                 <ul>
@@ -307,6 +339,7 @@
                                     <li>Développement de la présence en ligne</li>
                                 </ul>
                             </div>
+                            <!-- Cybersecurity skills -->
                             <div class="specialite-card">
                                 <h3>Cybersécurité</h3>
                                 <ul>
@@ -315,6 +348,7 @@
                                     <li>Politique de sécurité</li>
                                 </ul>
                             </div>
+                            <!-- Project management skills -->
                             <div class="specialite-card">
                                 <h3>Gestion de projet</h3>
                                 <ul>
@@ -326,9 +360,10 @@
                         </div>
                     </div>
 
+                    <!-- Specialization Options Section -->
                     <h2 class="education-history-title">Options</h2>
                     <div class="competence-options-grid options-section">
-                      <!-- SLAM -->
+                      <!-- SLAM Option -->
                       <div class="specialite-card slam-option">
                         <div class="card-header">
                           <span class="card-tag">Option SLAM</span>
@@ -340,7 +375,7 @@
                           <li><strong>Débouchés professionnels :</strong> Développeur d'applications, Développeur Web, Analyste programmeur, Chef de projet junior</li>
                         </ul>
                       </div>
-                      <!-- SISR -->
+                      <!-- SISR Option -->
                       <div class="specialite-card sisr-option">
                         <div class="card-header">
                           <span class="card-tag">Option SISR</span>
@@ -356,13 +391,14 @@
                 </div>
             </div>
         </section>
-<!-- seperate here  -->
-        <!-- switch it to a pyramid or smtg, -->
+
+        <!-- Technical Skills Section with animated logo carousel -->
         <section class="skills-section">
             <div class="container text-center">
                 <h2 class="skills-title">Mes compétences Techniques</h2>
                 <p class="subtitle">Voici un aperçu des technologies que j'utilise régulièrement.</p>
             </div>
+            <!-- Animated technology logos carousel -->
             <div class="logos">
                 <div class="logos-slide">
                     <img src="icons/html5.svg" alt="HTML5" title="HTML5" />
@@ -386,6 +422,7 @@
                     <img src="icons/cursoor.png" alt="cursor" title="cursor" />
                     <img src="icons/logo-text.png" alt="mockoon" title="mockoon" />
                 </div>
+                <!-- Duplicate slide for seamless infinite loop -->
                 <div class="logos-slide">
                     <img src="icons/html5.svg" alt="HTML5" title="HTML5" />
                     <img src="icons/css.svg" alt="CSS3" title="CSS3" />
@@ -409,9 +446,10 @@
                     <img src="icons/logo-text.png" alt="mockoon" title="mockoon" />
                 </div>
             </div>
-            <!-- Tag cloud for SLAM and SISR below carousel -->
+            
+            <!-- Skills categorization by specialization -->
             <div class="competence-options-grid">
-              <!-- SLAM -->
+              <!-- SLAM Skills -->
               <div class="specialite-card slam-option">
                 <div class="card-header">
                   <span class="card-tag">Compétences SLAM</span>
@@ -433,7 +471,7 @@
                   <span>Cursor</span>
                 </div>
               </div>
-              <!-- SISR -->
+              <!-- SISR Skills -->
               <div class="specialite-card sisr-option">
                 <div class="card-header">
                   <span class="card-tag">Compétences SISR</span>
@@ -454,6 +492,7 @@
         </section>
     </main>
     
+    <!-- JavaScript file for interactive functionality -->
     <script src="script.js"></script>
 </body>
 </html>

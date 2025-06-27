@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Meta tags for proper document encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Benkhadra Hajar</title>
+    
+    <!-- External CSS and font imports -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,15 +14,19 @@
 </head>
 <body class="noise">
 
+    <!-- Animated background blobs for visual appeal -->
     <div class="blob-container">
         <div class="blob"></div>
         <div class="blob"></div>
     </div>
 
+    <!-- Main navigation header -->
     <header class="navbar">
         <div class="container">
+            <!-- Logo/brand name -->
             <a href="" class="logo">Benkhadra Hajar</a>
             
+            <!-- Desktop navigation menu -->
             <nav class="nav-links-container">
                 <a href="index.html">Profil</a>
                 <a href="projets.html">Projets</a>
@@ -27,12 +34,15 @@
                 <a href="veille.html">Veille</a>
             </nav>
 
+            <!-- Contact button with animated dot (active state) -->
             <a href="contact.html" class="contact-btn active">
                 <span class="contact-dot"></span>
                 Contact
             </a>
 
+            <!-- Theme toggle button (dark/light mode) -->
             <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <!-- Sun icon for light mode -->
                 <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="5"></circle>
                     <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -44,22 +54,27 @@
                     <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                     <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                 </svg>
+                <!-- Moon icon for dark mode -->
                 <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                 </svg>
             </button>
 
+            <!-- Mobile menu toggle button -->
             <button class="menu-btn" id="menu-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </button>
         </div>
     </header>
+    
+    <!-- Mobile navigation menu (hidden by default) -->
     <div class="mobile-nav" id="mobile-nav">
         <a href="index.html">Profil</a>
         <a href="projets.html">Projets</a>
         <a href="stages.html">Stages</a>
         <a href="veille.html">Veille</a>
         <a href="contact.html" class="active">Contact</a>
+        <!-- Mobile theme toggle button -->
         <button class="theme-toggle" id="mobile-theme-toggle" aria-label="Toggle theme">
             <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="5"></circle>
@@ -78,30 +93,39 @@
         </button>
     </div>
 
+    <!-- Main content area -->
     <main>
+        <!-- Contact section with form and social links -->
         <section class="contact-section">
             <div class="container text-center">
+                <!-- Contact page title -->
                 <h1 class="contact-title">Leave a <span class="highlight">message if you like </span></h1>
                 <p class="subtitle">Don't hesitate sending me a message and see my socials for more.</p>
 
+                <!-- Social media links -->
                 <div class="social-links-contact">
                     <a href="https://www.linkedin.com/in/hajar-benkhadra-468628332/" target="_blank" class="social-btn">LinkedIn</a>
                     <a href="mailto:benkhadrahajar7@gmail.com" target="_blank" class="social-btn">Gmail</a>
                 </div>
 
                
+                <!-- Contact form using Formspree service -->
                 <form action="https://formspree.io/f/xldnwkar" method="POST" class="contact-form">
+                    <!-- Name and email input group -->
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Votre nom" required>
                         <input type="email" name="email" placeholder="Your email " required>
                     </div>
+                    <!-- Message textarea -->
                     <textarea name="message" placeholder="Your message" rows="6" required></textarea>
+                    <!-- Submit button -->
                     <button type="submit" class="btn-submit">Send message</button>
                 </form>
             </div>
         </section>
     </main>
     
+    <!-- JavaScript file for interactive functionality -->
     <script src="script.js"></script>
 </body>
 </html>
